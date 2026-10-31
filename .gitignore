@@ -1,0 +1,63 @@
+# =============================================================================
+# DentalAI — Root Git Ignore
+# =============================================================================
+
+# Virtual environments
+venv/
+backend/venv/
+ENV/
+env/
+
+# Node.js dependencies & builds
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.npm/
+.firebase/
+
+# Environment configurations & secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+frontend/.env.local
+frontend/.env.production
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/**/__pycache__/
+
+# Testing & Coverage caches
+.pytest_cache/
+backend/.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases
+*.sqlite3
+dentalai.db
+backend/dentalai.db
+
+# Storage & Temporary test uploads (keep sample files)
+backend/uploads/*
+!backend/uploads/.gitkeep
+!backend/uploads/sample_*
+backend/reports/*
+!backend/reports/.gitkeep
+backups/*
+!backups/.gitkeep
+
+# macOS & Editor metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,24 @@
+# Python artifacts
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+dentalai.db
+
+# Environment & local secrets
+.env
+.env.local
+
+# Test caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs & temp uploads (keep directory structures)
+uploads/*
+!uploads/.gitkeep
+reports/*
+!reports/.gitkeep
+backups/*
+
